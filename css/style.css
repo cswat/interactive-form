@@ -149,6 +149,10 @@ option {
 	margin-top: 1.25em;
 }
 
+.invalid-input {
+	box-shadow: 0 0 10px #CC0000; 
+}
+
 /* ================================= 
   Helper Classes
 ==================================== */
