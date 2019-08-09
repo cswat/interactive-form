@@ -145,10 +145,10 @@ form.addEventListener('submit', e => {
         if (!validateField(/\d{13,16}/, 'cc-num')) {
             invalidResponse += 1
         }
-        if (!validateField(/\d{5}/, 'zip')) {
+        if (!validateField(/^\d{5}$/, 'zip')) {
             invalidResponse += 1
         }
-        if (!validateField(/\d{3}/, 'cvv')) {
+        if (!validateField(/^\d{3}$/, 'cvv')) {
             invalidResponse += 1
         }
     } else if (paymentSelect.value === 'select method') {
